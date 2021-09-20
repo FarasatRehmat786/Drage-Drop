@@ -1,0 +1,44 @@
+body {
+  background-color: #47ea;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.drag{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1{
+  font-size: 3rem;
+}
+.empty {
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+  border: solid 3px black;
+  background-color: azure;
+  overflow: hidden;
+}
+.fill {
+  background-image: url(../img/1.jpg);
+  background-size: cover;
+  height: 150px;
+  width: 150;
+  cursor: pointer;
+}
+.hovered {
+  background-color: #333;
+  border-color: white;
+  border-style: dotted;
+}
+
+@media (max-width: 800px) {
+  body {
+    flex-direction: column;
+  }
+}
